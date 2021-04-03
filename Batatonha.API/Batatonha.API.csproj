@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Database.db" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.4">
@@ -19,6 +23,12 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Database.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
